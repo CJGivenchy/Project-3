@@ -4,11 +4,11 @@ Overview
 
 Project 3 is a Library Management System developed as a Windows Forms application in C# with Visual Studio 2022. It aims to streamline operations in libraries, facilitating book management, user role management, and the borrowing process for faculty and students.
 
-## Features
+Features
 
 - Login System: Secure authentication system for different roles including Admins, Faculty, and Students.
 - Role Management: Enables Admins to manage user roles within the system.
-- Book Managemen*: Allows Librarians to add new titles, manage book copies, and organize author information.
+- Book Management: Allows Librarians to add new titles, manage book copies, and organize author information.
 - Borrowing System: Faculty and Students can search for, check out, and return books.
 - Return System: Simplifies the process for users to return borrowed books.
 
