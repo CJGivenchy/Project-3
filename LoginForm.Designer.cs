@@ -1,4 +1,4 @@
-﻿namespace Project_3
+﻿namespace Project3
 {
     partial class LoginForm
     {
