@@ -1,4 +1,4 @@
-﻿namespace Project_3
+namespace Project3
 {
     partial class AdminForm
     {
@@ -29,44 +29,45 @@
         private void InitializeComponent()
         {
             btnAddUser = new Button();
-            btnDeleteUserRole = new Button();
             btnAddRoleToUser = new Button();
+            btnDeleteUserRole = new Button();
             SuspendLayout();
             // 
             // btnAddUser
             // 
-            btnAddUser.Location = new Point(50, 50);
+            btnAddUser.Location = new Point(100, 70);
             btnAddUser.Name = "btnAddUser";
-            btnAddUser.Size = new Size(120, 40);
+            btnAddUser.Size = new Size(200, 40);
             btnAddUser.TabIndex = 0;
             btnAddUser.Text = "Add User";
             btnAddUser.UseVisualStyleBackColor = true;
-            // 
-            // btnDeleteUserRole
-            // 
-            btnDeleteUserRole.Location = new Point(50, 100);
-            btnDeleteUserRole.Name = "btnDeleteUserRole";
-            btnDeleteUserRole.Size = new Size(120, 40);
-            btnDeleteUserRole.TabIndex = 1;
-            btnDeleteUserRole.Text = "Delete User Role";
-            btnDeleteUserRole.UseVisualStyleBackColor = true;
+            btnAddUser.Click += BtnAddUser_Click;
             // 
             // btnAddRoleToUser
             // 
-            btnAddRoleToUser.Location = new Point(50, 150);
+            btnAddRoleToUser.Location = new Point(100, 162);
             btnAddRoleToUser.Name = "btnAddRoleToUser";
-            btnAddRoleToUser.Size = new Size(144, 40);
-            btnAddRoleToUser.TabIndex = 2;
+            btnAddRoleToUser.Size = new Size(200, 40);
+            btnAddRoleToUser.TabIndex = 1;
             btnAddRoleToUser.Text = "Add Role to User";
             btnAddRoleToUser.UseVisualStyleBackColor = true;
+            // 
+            // btnDeleteUserRole
+            // 
+            btnDeleteUserRole.Location = new Point(100, 116);
+            btnDeleteUserRole.Name = "btnDeleteUserRole";
+            btnDeleteUserRole.Size = new Size(200, 40);
+            btnDeleteUserRole.TabIndex = 2;
+            btnDeleteUserRole.Text = "Delete User Role";
+            btnDeleteUserRole.UseVisualStyleBackColor = true;
             // 
             // AdminForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(382, 253);
-            Controls.Add(btnAddRoleToUser);
             Controls.Add(btnDeleteUserRole);
+            Controls.Add(btnAddRoleToUser);
             Controls.Add(btnAddUser);
             Name = "AdminForm";
             StartPosition = FormStartPosition.CenterScreen;
@@ -77,7 +78,7 @@
         #endregion
 
         private Button btnAddUser;
-        private Button btnDeleteUserRole;
         private Button btnAddRoleToUser;
+        private Button btnDeleteUserRole;
     }
 }
