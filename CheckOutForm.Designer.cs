@@ -1,4 +1,4 @@
-﻿namespace Project_3
+namespace Project3
 {
     partial class CheckOutForm
     {
@@ -28,28 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            lblTitleSearch = new Label();
+            txtTitleSearch = new TextBox();
             lstAvailableTitles = new ListBox();
+            lblTitleSearch = new Label();
             lblAvailableTitles = new Label();
             btnCheckOut = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // txtTitleSearch
             // 
-            textBox1.Location = new Point(150, 20);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(300, 27);
-            textBox1.TabIndex = 0;
-            // 
-            // lblTitleSearch
-            // 
-            lblTitleSearch.AutoSize = true;
-            lblTitleSearch.Location = new Point(20, 23);
-            lblTitleSearch.Name = "lblTitleSearch";
-            lblTitleSearch.Size = new Size(89, 20);
-            lblTitleSearch.TabIndex = 1;
-            lblTitleSearch.Text = "Title Search:";
+            txtTitleSearch.Location = new Point(150, 20);
+            txtTitleSearch.Name = "txtTitleSearch";
+            txtTitleSearch.Size = new Size(300, 27);
+            txtTitleSearch.TabIndex = 0;
             // 
             // lstAvailableTitles
             // 
@@ -58,7 +49,16 @@
             lstAvailableTitles.Location = new Point(150, 60);
             lstAvailableTitles.Name = "lstAvailableTitles";
             lstAvailableTitles.Size = new Size(300, 144);
-            lstAvailableTitles.TabIndex = 2;
+            lstAvailableTitles.TabIndex = 1;
+            // 
+            // lblTitleSearch
+            // 
+            lblTitleSearch.AutoSize = true;
+            lblTitleSearch.Location = new Point(20, 23);
+            lblTitleSearch.Name = "lblTitleSearch";
+            lblTitleSearch.Size = new Size(89, 20);
+            lblTitleSearch.TabIndex = 2;
+            lblTitleSearch.Text = "Title Search:";
             // 
             // lblAvailableTitles
             // 
@@ -85,9 +85,9 @@
             ClientSize = new Size(482, 253);
             Controls.Add(btnCheckOut);
             Controls.Add(lblAvailableTitles);
-            Controls.Add(lstAvailableTitles);
             Controls.Add(lblTitleSearch);
-            Controls.Add(textBox1);
+            Controls.Add(lstAvailableTitles);
+            Controls.Add(txtTitleSearch);
             Name = "CheckOutForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Check Out Book";
@@ -97,9 +97,9 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private Label lblTitleSearch;
+        private TextBox txtTitleSearch;
         private ListBox lstAvailableTitles;
+        private Label lblTitleSearch;
         private Label lblAvailableTitles;
         private Button btnCheckOut;
     }
