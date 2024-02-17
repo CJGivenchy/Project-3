@@ -1,4 +1,4 @@
-﻿namespace Project_3
+namespace Project3
 {
     partial class AdjustCopiesForm
     {
@@ -49,6 +49,7 @@
             // numTotalCopies
             // 
             numTotalCopies.Location = new Point(150, 70);
+            numTotalCopies.Maximum = new decimal(new int[] { 0, 0, 0, 0 });
             numTotalCopies.Name = "numTotalCopies";
             numTotalCopies.Size = new Size(200, 27);
             numTotalCopies.TabIndex = 1;
