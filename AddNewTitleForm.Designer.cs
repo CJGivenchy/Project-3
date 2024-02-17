@@ -1,4 +1,4 @@
-﻿namespace Project_3
+namespace Project3
 {
     partial class AddNewTitleForm
     {
@@ -34,12 +34,12 @@
             lblCopyrightYear = new Label();
             txtISBN13 = new TextBox();
             lblISBN13 = new Label();
-            lblLocation = new Label();
-            txtLocation = new ComboBox();
+            txtLocation = new TextBox();
             numTotalCopies = new NumericUpDown();
+            lblLocation = new Label();
             lblTotalCopies = new Label();
-            lblAuthors = new Label();
             cmbAuthors = new ComboBox();
+            lblAuthors = new Label();
             btnAddTitle = new Button();
             ((System.ComponentModel.ISupportInitialize)numTotalCopies).BeginInit();
             SuspendLayout();
@@ -65,7 +65,7 @@
             txtCopyrightYear.Location = new Point(150, 60);
             txtCopyrightYear.Name = "txtCopyrightYear";
             txtCopyrightYear.Size = new Size(250, 27);
-            txtCopyrightYear.TabIndex = 2;
+            txtCopyrightYear.TabIndex = 2;            
             // 
             // lblCopyrightYear
             // 
@@ -92,22 +92,12 @@
             lblISBN13.TabIndex = 5;
             lblISBN13.Text = "ISBN13:";
             // 
-            // lblLocation
-            // 
-            lblLocation.AutoSize = true;
-            lblLocation.Location = new Point(20, 143);
-            lblLocation.Name = "lblLocation";
-            lblLocation.Size = new Size(69, 20);
-            lblLocation.TabIndex = 6;
-            lblLocation.Text = "Location:";
-            // 
             // txtLocation
             // 
-            txtLocation.FormattingEnabled = true;
             txtLocation.Location = new Point(150, 140);
             txtLocation.Name = "txtLocation";
-            txtLocation.Size = new Size(250, 28);
-            txtLocation.TabIndex = 7;
+            txtLocation.Size = new Size(250, 27);
+            txtLocation.TabIndex = 6;
             // 
             // numTotalCopies
             // 
@@ -118,23 +108,24 @@
             numTotalCopies.TabIndex = 8;
             numTotalCopies.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
+            // lblLocation
+            // 
+            lblLocation.AutoSize = true;
+            lblLocation.Location = new Point(20, 143);
+            lblLocation.Name = "lblLocation";
+            lblLocation.Size = new Size(69, 20);
+            lblLocation.TabIndex = 9;
+            lblLocation.Text = "Location:";
+            // 
             // lblTotalCopies
             // 
             lblTotalCopies.AutoSize = true;
             lblTotalCopies.Location = new Point(20, 183);
             lblTotalCopies.Name = "lblTotalCopies";
             lblTotalCopies.Size = new Size(94, 20);
-            lblTotalCopies.TabIndex = 9;
+            lblTotalCopies.TabIndex = 10;
+            lblTotalCopies.Tag = "";
             lblTotalCopies.Text = "Total Copies:";
-            // 
-            // lblAuthors
-            // 
-            lblAuthors.AutoSize = true;
-            lblAuthors.Location = new Point(20, 223);
-            lblAuthors.Name = "lblAuthors";
-            lblAuthors.Size = new Size(63, 20);
-            lblAuthors.TabIndex = 10;
-            lblAuthors.Text = "Authors:";
             // 
             // cmbAuthors
             // 
@@ -144,12 +135,21 @@
             cmbAuthors.Size = new Size(250, 28);
             cmbAuthors.TabIndex = 11;
             // 
+            // lblAuthors
+            // 
+            lblAuthors.AutoSize = true;
+            lblAuthors.Location = new Point(20, 223);
+            lblAuthors.Name = "lblAuthors";
+            lblAuthors.Size = new Size(63, 20);
+            lblAuthors.TabIndex = 12;
+            lblAuthors.Text = "Authors:";
+            // 
             // btnAddTitle
             // 
             btnAddTitle.Location = new Point(150, 300);
             btnAddTitle.Name = "btnAddTitle";
-            btnAddTitle.Size = new Size(94, 29);
-            btnAddTitle.TabIndex = 12;
+            btnAddTitle.Size = new Size(100, 40);
+            btnAddTitle.TabIndex = 13;
             btnAddTitle.Text = "Add Title";
             btnAddTitle.UseVisualStyleBackColor = true;
             // 
@@ -159,12 +159,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(432, 353);
             Controls.Add(btnAddTitle);
-            Controls.Add(cmbAuthors);
             Controls.Add(lblAuthors);
+            Controls.Add(cmbAuthors);
             Controls.Add(lblTotalCopies);
+            Controls.Add(lblLocation);
             Controls.Add(numTotalCopies);
             Controls.Add(txtLocation);
-            Controls.Add(lblLocation);
             Controls.Add(lblISBN13);
             Controls.Add(txtISBN13);
             Controls.Add(lblCopyrightYear);
@@ -173,7 +173,7 @@
             Controls.Add(txtTitle);
             Name = "AddNewTitleForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Add New Book Title";
+            Text = "Add New Book Title (Libraian)";
             ((System.ComponentModel.ISupportInitialize)numTotalCopies).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -187,12 +187,13 @@
         private Label lblCopyrightYear;
         private TextBox txtISBN13;
         private Label lblISBN13;
-        private Label lblLocation;
-        private ComboBox txtLocation;
+        private TextBox txtLocation;
         private NumericUpDown numTotalCopies;
+        private Label lblLocation;
         private Label lblTotalCopies;
-        private Label lblAuthors;
         private ComboBox cmbAuthors;
+        private Label lblAuthors;
         private Button btnAddTitle;
+        
     }
 }
