@@ -2,6 +2,8 @@
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using Microsoft.Data.SqlClient;
+
+
 namespace Project3
 {
     public partial class AddUserForm : Form
