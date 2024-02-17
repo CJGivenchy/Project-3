@@ -1,4 +1,4 @@
-﻿namespace Project3
+namespace Project3
 {
     partial class LoginForm
     {
@@ -28,57 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lbUsername = new Label();
-            lbPassword = new Label();
             txtUsername = new TextBox();
+            lblUsername = new Label();
             txtPassword = new TextBox();
-            lbRole = new Label();
+            lblPassword = new Label();
             cmbRole = new ComboBox();
+            lblRole = new Label();
             btnLogin = new Button();
             SuspendLayout();
-            // 
-            // lbUsername
-            // 
-            lbUsername.AutoSize = true;
-            lbUsername.Location = new Point(20, 23);
-            lbUsername.Name = "lbUsername";
-            lbUsername.Size = new Size(75, 20);
-            lbUsername.TabIndex = 0;
-            lbUsername.Text = "Username";
-            lbUsername.Click += LoginForm_Click;
-            // 
-            // lbPassword
-            // 
-            lbPassword.AutoSize = true;
-            lbPassword.Location = new Point(20, 53);
-            lbPassword.Name = "lbPassword";
-            lbPassword.Size = new Size(70, 20);
-            lbPassword.TabIndex = 1;
-            lbPassword.Text = "Password";
             // 
             // txtUsername
             // 
             txtUsername.Location = new Point(100, 20);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(176, 27);
-            txtUsername.TabIndex = 2;
+            txtUsername.Size = new Size(125, 27);
+            txtUsername.TabIndex = 0;
+            // 
+            // lblUsername
+            // 
+            lblUsername.AutoSize = true;
+            lblUsername.Location = new Point(20, 23);
+            lblUsername.Name = "lblUsername";
+            lblUsername.Size = new Size(78, 20);
+            lblUsername.TabIndex = 1;
+            lblUsername.Text = "Username:";
             // 
             // txtPassword
             // 
             txtPassword.Location = new Point(100, 50);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
-            txtPassword.Size = new Size(176, 27);
-            txtPassword.TabIndex = 3;
+            txtPassword.Size = new Size(125, 27);
+            txtPassword.TabIndex = 2;
             // 
-            // lbRole
+            // lblPassword
             // 
-            lbRole.AutoSize = true;
-            lbRole.Location = new Point(20, 83);
-            lbRole.Name = "lbRole";
-            lbRole.Size = new Size(39, 20);
-            lbRole.TabIndex = 4;
-            lbRole.Text = "Role";
+            lblPassword.AutoSize = true;
+            lblPassword.Location = new Point(20, 53);
+            lblPassword.Name = "lblPassword";
+            lblPassword.Size = new Size(73, 20);
+            lblPassword.TabIndex = 3;
+            lblPassword.Text = "Password:";
             // 
             // cmbRole
             // 
@@ -86,8 +76,17 @@
             cmbRole.FormattingEnabled = true;
             cmbRole.Location = new Point(100, 80);
             cmbRole.Name = "cmbRole";
-            cmbRole.Size = new Size(135, 28);
-            cmbRole.TabIndex = 5;
+            cmbRole.Size = new Size(151, 28);
+            cmbRole.TabIndex = 4;
+            // 
+            // lblRole
+            // 
+            lblRole.AutoSize = true;
+            lblRole.Location = new Point(20, 83);
+            lblRole.Name = "lblRole";
+            lblRole.Size = new Size(42, 20);
+            lblRole.TabIndex = 5;
+            lblRole.Text = "Role:";
             // 
             // btnLogin
             // 
@@ -104,28 +103,27 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(282, 153);
             Controls.Add(btnLogin);
+            Controls.Add(lblRole);
             Controls.Add(cmbRole);
-            Controls.Add(lbRole);
+            Controls.Add(lblPassword);
             Controls.Add(txtPassword);
+            Controls.Add(lblUsername);
             Controls.Add(txtUsername);
-            Controls.Add(lbPassword);
-            Controls.Add(lbUsername);
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login Form";
-            Load += LoginForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label lbUsername;
-        private Label lbPassword;
         private TextBox txtUsername;
+        private Label lblUsername;
         private TextBox txtPassword;
-        private Label lbRole;
+        private Label lblPassword;
         private ComboBox cmbRole;
+        private Label lblRole;
         private Button btnLogin;
     }
 }
